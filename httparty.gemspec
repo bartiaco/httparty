@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["John Nunemaker", "Sandro Turriate"]
-  s.date = %q{2010-01-31}
+  s.date = %q{2010-02-10}
   s.default_executable = %q{httparty}
   s.description = %q{Makes http fun! Also, makes consuming restful web services dead easy.}
   s.email = %q{nunemaker@gmail.com}
@@ -55,6 +55,7 @@ Gem::Specification.new do |s|
      "lib/httparty/parser.rb",
      "lib/httparty/request.rb",
      "lib/httparty/response.rb",
+     "lib/net_digest_auth.rb",
      "spec/fixtures/delicious.xml",
      "spec/fixtures/empty.xml",
      "spec/fixtures/google.html",
@@ -107,14 +108,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<cucumber>, ["~> 0.4"])
       s.add_development_dependency(%q<fakeweb>, ["~> 1.2"])
       s.add_development_dependency(%q<mongrel>, ["~> 1.1"])
-      s.add_development_dependency(%q<rspec>, ["= 1.2.9"])
+      s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
     else
       s.add_dependency(%q<crack>, ["= 0.1.6"])
       s.add_dependency(%q<activesupport>, ["~> 2.3"])
       s.add_dependency(%q<cucumber>, ["~> 0.4"])
       s.add_dependency(%q<fakeweb>, ["~> 1.2"])
       s.add_dependency(%q<mongrel>, ["~> 1.1"])
-      s.add_dependency(%q<rspec>, ["= 1.2.9"])
+      s.add_dependency(%q<rspec>, [">= 1.2.9"])
     end
   else
     s.add_dependency(%q<crack>, ["= 0.1.6"])
@@ -122,7 +123,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<cucumber>, ["~> 0.4"])
     s.add_dependency(%q<fakeweb>, ["~> 1.2"])
     s.add_dependency(%q<mongrel>, ["~> 1.1"])
-    s.add_dependency(%q<rspec>, ["= 1.2.9"])
+    s.add_dependency(%q<rspec>, [">= 1.2.9"])
   end
 end
 
